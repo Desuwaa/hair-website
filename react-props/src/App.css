@@ -1,0 +1,23 @@
+.players {
+  background-color: rgb(188, 228, 239);
+  align-items: center;
+}
+
+.text {
+  padding-left: 10px;
+  color: brown;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 200;
+  font-style: oblique;
+}
+
+.play {
+   align-content: center;
+   justify-content: center;
+}
