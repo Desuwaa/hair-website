@@ -1,16 +1,22 @@
 import React from 'react';
+import { useNavigate, Link} from 'react-router-dom';
+import '../App.css';
+
 
 const MovieCard = ({ movie }) => {
-  const { title, description, posterURL, rating } = movie;
+    const Navigate = useNavigate();
+const { id, title, description, posterURL, rating } = movie;
 
-  return (
-    <div className="movie-card">
-      <img src={posterURL} alt={title} />
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <p>Rating: {rating}</p>
-    </div>
-  );
+return (
+    
+        <div className="movie-card" >
+            <Link to={`/description/${id}`}> <img src={posterURL} alt={title} /></Link>
+            <h2>{title}</h2>
+            <p className='desc'>{description}</p>
+            <p className='rating'>Rating: {rating}</p>
+        </div>
+    
+    );
 };
 
 export default MovieCard;
